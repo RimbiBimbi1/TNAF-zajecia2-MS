@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <title>Change_me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+
+
+<body>
+<section class="wrapper">
+  <h2>Employment Form</h2>
+  <div clas="inputWrapper">
+  <form>
+    <div class="row">
+      <div class="inputWrapper">
+        <label for="name">First name</label>
+        <input id="name" type="text" class="textInput" placeholder="Jan">
+      </div>
+      <div class="inputWrapper">
+      <label for="surname">Last name</label>
+        <input id="surname" type="text" class="textInput" placeholder="Kowalski">
+      </div>
+    </div>
+    <div class="row">
+      <div class="inputWrapper">
+        <label for="email">E-mail</label>
+        <input id="email" type="text" class="textInput">
+      </div>
+      <div class="inputWrapper">
+        <label for="phone">Phone</label>
+        <input id="phone" type="text" class="textInput">
+      </div>
+      <div class="inputWrapper">
+        <label for="birthDate">Date of birth</label>
+        <input id="birthDate" type="date" class="textInput">
+      </div>
+    </div>
+    <div class="inputWrapper">
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option id="Male" value="Male">Male</option>
+        <option id="Female" value="Female">Female</option>
+      </select>
+    </div>
+    <div class="inputWrapper">
+      <legend>What are you looking for?</legend>
+      <div class="row">
+        <input id="softEng" value="Software Engineer" name="job" type="radio">
+        <label for="softEng">Software Engineer</label>
+        <input id="uxDes" value="UX Designer" name="job" type="radio">
+        <label for="uxDes">UX Designer</label>
+        <input id="anSpec" value="Analytics Specialist" name="job" type="radio">
+        <label for="anSpec">Analytics Specialist</label>
+        <input id="prMan" value="Project Manager" name="job" type="radio">
+        <label for="prMan">Project Manager</label>
+      </div>
+    </div>
+    <div class="inputWrapper">
+      <legend>Which programming languages do you know?</legend>
+      <div class="row">
+        <input id="java" value="java" name="lang" type="checkbox">
+        <label for="java">Java</label>
+        <input id="js" value="js" name="lang" type="checkbox">
+        <label for="js">Javascript</label>
+        <input id="c#" value="c#" name="lang" type="checkbox">
+        <label for="c#">C#</label>
+        <input id="kotlin" value="kotlin" name="lang" type="checkbox">
+        <label for="kotlin">Kotlin</label>
+        <input id="python" value="python" name="lang" type="checkbox">
+        <label for="python">Python</label>
+        <input id="scala" value="scala" name="lang" type="checkbox">
+        <label for="scala">Scala</label>
+      </div>
+    </div>
+    <div class="inputWrapper">
+      <label for="msg">Message</label>
+      <textarea id="msg" placeholder="Type your message"></textarea>
+    </div>
+    <div class="row">
+      <button type="reset">Reset</button>
+      <button type="submit">Button</button>
+    </div>
+
+  </form>
+  </div>
+
+</section>
+
+</body>
+</html>
