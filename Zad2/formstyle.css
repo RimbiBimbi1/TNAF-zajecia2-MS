@@ -1,7 +1,7 @@
 body{
     font-family: "Arial";
-    color: #ff7700;
     box-sizing: border-box;
+    overflow-x: clip;
 }
 
 label{
@@ -10,35 +10,129 @@ label{
 
 h2{
     font-family: "Arial Black";
+    color: #ff7700;
+}
+h4{
+    color: #ff7700;
 }
 
 .wrapper{
     height: auto;
-    width: 600px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: left;
+
+
+    align-items: center;
+}
+
+.formBox{
+    max-width: 85vw;
+
 }
 
 .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    justify-content: space-between;
+
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 .inputWrapper{
-    
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: auto;
+    flex-grow: 1;
+
     max-width: 100%;
-    padding: 5%;
+    min-width: 250px;
+
+    margin: 0 1rem 0 0;
+}
+
+.inputWrapper2{
+    display: inline-flex;
+
+    flex-direction: row;
+
+    margin: 0 0 0 0;
+}
+
+
+.checkbox{
+    appearance: none;
+    display: inline-block;
+    position: relative;
+
+    width: 1rem;
+    height: 1rem;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+}
+
+
+.checkbox:checked {
+}
+
+.checkbox:checked:after {
+    content: '\2714';
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: -2px;
+    left: 2px;
+
+    color: #ff7700;
 }
 
 .textInput{
-    display: block;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
 
-    padding: 5%;
+    font-size: 14px;
+    height: 3rem;
+    padding: 5px;
+
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+
+    resize: none;
+}
+
+.textInput:focus{
+    outline: 2px solid #ff7700;
+}
+
+.formButton{
+    display: flex;
+    flex-grow: 2;
 
 
-    border: rgba(192, 192, 192, 0.75);
-    border-radius: 5px;
+    padding: 2%;
 
+    border: 1px solid #b05800;
+    border-radius: 3px;
+
+    background: #ff7700;
+    outline: #b05800;
+
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+
+    margin: 0 1rem 0 0;
+}
+
+.formButton:first-child{
+    flex-grow: 1;
 }

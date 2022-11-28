@@ -11,84 +11,116 @@
 
 
 <body>
-<section class="wrapper">
-  <h2>Employment Form</h2>
-  <div clas="inputWrapper">
+<div class="wrapper">
+  <main class="formBox">
+    <div class="row">
+      <h2>Employment Form</h2>
+    </div>
   <form>
     <div class="row">
       <div class="inputWrapper">
-        <label for="name">First name</label>
-        <input id="name" type="text" class="textInput" placeholder="Jan">
+        <label for="name"><h4>First name</h4></label>
+        <input id="name" type="text" class="textInput" placeholder="Jan" required>
       </div>
       <div class="inputWrapper">
-      <label for="surname">Last name</label>
-        <input id="surname" type="text" class="textInput" placeholder="Kowalski">
+      <label for="surname"><h4>Last name</h4></label>
+        <input id="surname" type="text" class="textInput" placeholder="Kowalski" required>
       </div>
     </div>
     <div class="row">
       <div class="inputWrapper">
-        <label for="email">E-mail</label>
-        <input id="email" type="text" class="textInput">
+        <label for="email"><h4>E-mail</h4></label>
+        <input id="email" type="email" class="textInput" placeholder="jk@gamil.com"  required>
       </div>
       <div class="inputWrapper">
-        <label for="phone">Phone</label>
-        <input id="phone" type="text" class="textInput">
+        <label for="phone"><h4>Phone</h4></label>
+        <input id="phone" type="tel" class="textInput" placeholder="505 505 505" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
       </div>
       <div class="inputWrapper">
-        <label for="birthDate">Date of birth</label>
-        <input id="birthDate" type="date" class="textInput">
+        <label for="birthDate"><h4>Date of birth</h4></label>
+        <input id="birthDate" type="date" class="textInput" required>
       </div>
-    </div>
-    <div class="inputWrapper">
-      <label for="gender">Gender</label>
-      <select id="gender">
-        <option id="Male" value="Male">Male</option>
-        <option id="Female" value="Female">Female</option>
-      </select>
-    </div>
-    <div class="inputWrapper">
-      <legend>What are you looking for?</legend>
-      <div class="row">
-        <input id="softEng" value="Software Engineer" name="job" type="radio">
-        <label for="softEng">Software Engineer</label>
-        <input id="uxDes" value="UX Designer" name="job" type="radio">
-        <label for="uxDes">UX Designer</label>
-        <input id="anSpec" value="Analytics Specialist" name="job" type="radio">
-        <label for="anSpec">Analytics Specialist</label>
-        <input id="prMan" value="Project Manager" name="job" type="radio">
-        <label for="prMan">Project Manager</label>
-      </div>
-    </div>
-    <div class="inputWrapper">
-      <legend>Which programming languages do you know?</legend>
-      <div class="row">
-        <input id="java" value="java" name="lang" type="checkbox">
-        <label for="java">Java</label>
-        <input id="js" value="js" name="lang" type="checkbox">
-        <label for="js">Javascript</label>
-        <input id="c#" value="c#" name="lang" type="checkbox">
-        <label for="c#">C#</label>
-        <input id="kotlin" value="kotlin" name="lang" type="checkbox">
-        <label for="kotlin">Kotlin</label>
-        <input id="python" value="python" name="lang" type="checkbox">
-        <label for="python">Python</label>
-        <input id="scala" value="scala" name="lang" type="checkbox">
-        <label for="scala">Scala</label>
-      </div>
-    </div>
-    <div class="inputWrapper">
-      <label for="msg">Message</label>
-      <textarea id="msg" placeholder="Type your message"></textarea>
     </div>
     <div class="row">
-      <button type="reset">Reset</button>
-      <button type="submit">Button</button>
+      <div class="inputWrapper">
+        <label for="gender"><h4>Gender</h4></label>
+        <select id="gender" class="textInput" required>
+          <option id="" value=""  selected disabled hidden>...</option>
+          <option id="Male" value="Male">Male</option>
+          <option id="Female" value="Female">Female</option>
+        </select>
+      </div>
     </div>
+    <div class="row">
+      <div class="inputWrapper">
+        <legend><h4>What are you looking for?</h4></legend>
+        <div class="row">
+          <div class="inputWrapper2">
+            <input id="softEng" value="Software Engineer" name="job" type="radio" required>
+            <label for="softEng">Software Engineer</label>
+          </div>
+          <div class="inputWrapper2">
+            <input id="uxDes" value="UX Designer" name="job" type="radio" required>
+            <label for="uxDes">UX Designer</label>
+          </div>
+          <div class="inputWrapper2">
+            <input id="anSpec" value="Analytics Specialist" name="job" type="radio" required>
+            <label for="anSpec">Analytics Specialist</label>
+          </div>
+          <div class="inputWrapper2">
+            <input id="prMan" value="Project Manager" name="job" type="radio" required>
+            <label for="prMan">Project Manager</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="inputWrapper">
+        <legend><h4>Which programming languages do you know?</h4></legend>
+        <div class="row">
+          <div class="inputWrapper2">
+            <input class="checkbox" id="java" value="java" name="lang" type="checkbox">
+            <label for="java">Java</label>
+          </div>
+          <div class="inputWrapper2">
+            <input class="checkbox" id="js" value="js" name="lang" type="checkbox">
+            <label for="js">Javascript</label>
+          </div>
+          <div class="inputWrapper2">
+            <input class="checkbox" id="c#" value="c#" name="lang" type="checkbox">
+            <label for="c#">C#</label>
+          </div>
+          <div class="inputWrapper2">
+            <input class="checkbox" id="kotlin" value="kotlin" name="lang" type="checkbox">
+            <label for="kotlin">Kotlin</label>
+          </div>
+          <div class="inputWrapper2">
+            <input class="checkbox" id="python" value="python" name="lang" type="checkbox">
+            <label for="python">Python</label>
+          </div>
+          <div class="inputWrapper2">
+            <input class="checkbox" id="scala" value="scala" name="lang" type="checkbox">
+            <label for="scala">Scala</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="inputWrapper">
+        <label for="msg"><h4>Message</h4></label>
+        <textarea id="msg" class="textInput" placeholder="Type your message" required></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <button class ="formButton" type="reset">Reset</button>
+      <button class ="formButton" type="submit">Submit</button>
+    </div>
+
 
   </form>
-  </div>
-
-</section>
-
+  </main>
+</div>
 </body>
 </html>
+
+<script src="script.js"></script>
